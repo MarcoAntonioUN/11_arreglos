@@ -22,3 +22,16 @@ int main() {
     system("pause");
     return 0;
 }
+void invertirArreglo(int arr[], int tamano) {
+    int inicio = 0;
+    int fin = tamano - 1;
+    while (inicio < fin) {
+        // Intercambia elementos
+        int temp = arr[inicio];
+        arr[inicio] = arr[fin];
+        arr[fin] = temp;
+        // Mueve los punteros
+        inicio++;
+        fin--;
+    }
+}
